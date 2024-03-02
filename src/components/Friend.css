@@ -1,0 +1,87 @@
+.friends-list {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    
+  }
+  
+
+  .friends-list-ul{
+    list-style: none;
+    
+  }
+
+
+  .friend {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+
+  .friends-list-title {
+    margin-bottom: 0.5rem; /* Add some space below the title */
+    align-self: flex-start; /* Align the title to the left edge of the container */
+    color: #e7b41d;
+  }
+
+
+
+  hr {
+    margin: 0; /* Remove default margin from the horizontal break */
+    border-top: 1px solid #ccc; /* Set a thin border for the break */
+  }
+  
+  .friend-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+
+
+  
+  
+  .friend-info {
+    display: flex;
+    flex-direction: column;
+    
+    /* Added align-items: center; to center content vertically */
+    justify-content: space-between;
+    flex-grow: 1; /* Allow remaining space to be filled by friend info */
+  }
+  
+  .friend-name {
+    font-weight: bold;
+    /* Added line-height: 1.5; to adjust spacing for vertical centering */
+    margin-bottom: 0.5rem;
+  }
+
+.friend-about {
+  font-size: 0.8rem; 
+  margin-top: 0.2rem; 
+  color: #999; 
+}
+
+  
+  .friend-remove {
+    background-color: transparent;
+    border: none;
+    color: #e7b41d; /* Light shade of ochre */
+    font-size: medium;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    justify-content: flex-end; /* Move button to the end of the bar */
+  }
+  
+  .friend-remove:hover {
+    color: #c1a77a; /* Slightly darker shade of ochre on hover */
+  }
+  
